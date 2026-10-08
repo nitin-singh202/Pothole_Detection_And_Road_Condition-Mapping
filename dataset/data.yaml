@@ -1,0 +1,19 @@
+# ==============================================================================
+# YOLOv8 Dataset Configuration File for Pothole Detection
+# ==============================================================================
+# Path configuration:
+# 'path' defines the root directory for the dataset (relative or absolute).
+# 'train', 'val', and 'test' specify paths to image directories relative to 'path'.
+# ==============================================================================
+
+path: ../dataset   # Dataset root directory relative to training script or absolute path
+train: images/train  # Training images (e.g., 70-80% of dataset)
+val: images/val      # Validation images for hyperparameter tuning & metric evaluation (10-20%)
+test: images/test    # Unseen test set for final unbiased benchmark (optional, 10%)
+
+# Number of classes
+nc: 1
+
+# Class names dictionary (index-to-name mapping)
+names:
+  0: pothole
